@@ -10,8 +10,11 @@
 <body>
     <div class="w-full h-screen bg-slate-400 p-10">
         <div class="flex justify-between items-center">
+            <div class="flex items-center gap-2">
+            <div onclick="window.location.href='/test'" class=" w-10 h-10 rounded-full"><img class="w-full  h-full rounded-full" src="/images/uploads/<%=user.profilePic%>" alt="profile pic"></div>
 
             <h3 class="text-3xl text-zinc-800 ">Hello <%= user.name %>👋🏻</h3>
+        </div>
             <a class ="text-sm w-20 text-center text-white bg-red-500 px-2 py-2 rounded-md" href="/logout">logout</a>
         </div>
         <h5 class=" text-zinc-600 mb-5 ">You can create a new post</h5>
